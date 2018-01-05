@@ -147,7 +147,7 @@
 	</section>
 
 	<footer>
-			<p>&copy; 2017 Andrew Creech. All rights reserved.</p>
+			<p>&copy; <span id="year">2017</span> Andrew Creech. All rights reserved.</p>
 	</footer>
 
 	<!-- Google Analytics  -->
@@ -158,6 +158,9 @@
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	  ga('create', 'UA-74136001-1', 'auto');
 	  ga('send', 'pageview');
+
+	  var currentDate = new Date();
+	  document.getElementById('year').innerHTML = currentDate.getFullYear();
 	</script>
 </body>
 </html>
